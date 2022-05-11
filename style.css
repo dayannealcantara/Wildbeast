@@ -211,7 +211,18 @@ p{
     'footer footer footer';
   }
 }
-
+@media (max-width: 600px) {
+  .content{
+    grid-template-columns: auto;
+  }
+  .text{
+    grid-template-columns: 1/-1;
+  }
+  .img1{
+    grid-row: span 2;
+    align-self: end;
+  }
+}
 @media (max-width: 760px) {
   .estrutura{
     grid-template-columns: 100%;
