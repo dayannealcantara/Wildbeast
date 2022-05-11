@@ -150,11 +150,31 @@ p{
 .img2{
  align-self: end;
 }
-.atributos{
-  list-style: none;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #000;
+.atributos, .citacao{
+  list-style: none; 
+  align-self: start;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.atributos li {
+  color: white;
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .img3{
   grid-column: 1 / -1;
@@ -213,5 +233,19 @@ p{
   }
   .header li + li {
     margin-left: 10px;
+  }
+  .sidenav{
+    position: relative;
+    overflow-x: auto;
+    padding: 0 30px;
+  }
+  .sidenav ul{
+    display: flex;
+  }
+  .sidenav li {
+    flex: 1 0 60px;
+  }
+  .sidenav li a{
+    margin: 30px 30px 30px 0;
   }
 }
