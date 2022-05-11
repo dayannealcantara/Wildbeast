@@ -171,3 +171,15 @@ p{
   width: 250px;
   border-radius: 8px;
 }
+
+.footer{
+  grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+ 
+}
+
+.footer p {
+  text-align: center;
+  color:#fff;
+  padding: 30px;
+}
